@@ -1,0 +1,19 @@
+# Add remote
+
+https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+
+- Create an empty repository on Github
+- copy the repository SSH link, then in command line, go to the local react app folder, type:
+
+  > git remote add origin git@github.com:Your-Name/my-app.git
+
+- When commits are made, simply:
+
+  > git push --set-upstream origin main
+
+- To pull from GitHub:
+  > git branch --set-upstream-to=origin/main
+
+# Deploy
+
+https://medium.com/@isharamalaviarachchi/how-to-deploy-your-react-app-into-github-pages-b2c96292b18e

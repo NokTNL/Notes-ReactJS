@@ -1,0 +1,23 @@
+1. Install the libraries
+   https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react
+
+$ npm install --save @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome
+
+These are installed depending on which subset your icon belongs to:
+npm install --save @fortawesome/free-solid-svg-icons // only for solid icons
+npm install --save @fortawesome/free-regular-svg-icons // only for regular icon
+npm install --save @fortawesome/free-brands-svg-icons // for brands
+
+2. Add individual icons
+   https://www.digitalocean.com/community/tutorials/how-to-use-font-awesome-5-with-react
+
+In your component file:
+
+// This enables using the FontAwesomeIcon component
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// If your Fontawesome class is "fab fa-github", that means it is "brand"("b"); turn the second part it into lowerCamel:
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+
+Then in the component function:
+<FontAwesomeIcon icon={faGithub} />
