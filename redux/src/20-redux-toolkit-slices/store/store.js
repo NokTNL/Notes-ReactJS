@@ -13,7 +13,7 @@ const counterSlice = createSlice({
   // An object listing the reducers this slice needs
   // The individual object keys will become the name of the action TYPE
   reducers: {
-    // !! You CAN write mutating code in these reducers
+    // !! You CAN write mutating code in these reducers, which makes you life easier
     // It is because redux toolkit uses Immer under the hood and converts it to non-mutating code
     increment(state) {
       state.counter++;
