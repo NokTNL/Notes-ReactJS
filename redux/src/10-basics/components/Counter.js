@@ -8,7 +8,7 @@ const Counter = () => {
   const counter = useSelector((state) => state.counter); // returns the "counter" prop of the state
   // when the state is updated, a functional component with the useSelector hook will be called again ...
   // ... which in turn will update the counter value
-  // !! useSelector also subscribes the store for you
+  // !! useSelector also subscribes to the store for you
   const showCounter = useSelector((state) => state.showCounter);
 
   // useDispatch: returns a FUNCTION that let you to dispatch function

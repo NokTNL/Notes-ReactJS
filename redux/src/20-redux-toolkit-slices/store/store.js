@@ -1,4 +1,4 @@
-// redux toolkit will still make importing from "redux" work:
+// redux toolkit will still make importing from "redux" works
 import { createSlice, createStore, configureStore } from "@reduxjs/toolkit";
 
 const initialState = { counter: 0, showCounter: true };

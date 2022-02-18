@@ -50,6 +50,7 @@ const store = configureStore({
     }
     */
     // Grouped into the keys specified below
+    // This is called a "reducer map"
     counter: counterSlice.reducer,
     auth: authSlice.reducer,
   },
