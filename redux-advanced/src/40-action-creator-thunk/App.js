@@ -19,14 +19,14 @@ function App() {
   const cart = useSelector((state) => state.cart);
   const notification = useSelector((state) => state.ui.notification);
 
-  // You still need useEffect (bc. it is a side effect indeed)
+  // You need useEffect to listen to state changes
   useEffect(() => {
     if (isInitial) {
       isInitial = false;
       return;
     }
 
-    // !! call the thunk to return a FUNCTION
+    // !! call the thunk inside dispatch() to return a FUNCTION
     // When a useDispatch dispatch function receives a function as the argument (instead of an action object), ...
     // ... dispatch will call that function for you and pass in the store's (dispatch, getState) methods as arguments
     dispatch(sendCartData(cart));
