@@ -11,7 +11,7 @@ const counterSlice = createSlice({
   // Need to specify the initial state of this slice as it will be run once when creating the store
   initialState,
   // An object listing the reducers this slice needs
-  // The individual object keys will become the name of the action TYPE
+  // The individual object keys will become the SUFFIX of the action TYPE
   reducers: {
     // !! You CAN write mutating code in these reducers, which makes you life easier
     // It is because redux toolkit uses Immer under the hood and converts it to non-mutating code
@@ -30,7 +30,7 @@ const counterSlice = createSlice({
   },
 });
 
-// createSlice returns an object:
+// createSlice returns a slice object:
 /* 
   {
     ...
