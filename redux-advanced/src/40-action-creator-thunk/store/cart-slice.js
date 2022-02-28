@@ -45,8 +45,7 @@ const cartSlice = createSlice({
 
 /* Action Creator Thunks */
 // Thunks: a function that delays an action until later
-// Action creator function: a function that returns ANOTHER FUNCTION that eventually dispatches actions
-// Action creator thunks: an action creator function that yields delayed actions
+// Action creator thunks: a function that you use like an action creator but dispatches DELAYED actions
 // !! Put it OUTSIDE of the slice, and export it named
 export const sendCartData = (cart) => {
   // returns a FUNCTION that recieves the store's methods as arguments: (dispatch, getState)

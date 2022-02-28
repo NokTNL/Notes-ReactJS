@@ -19,16 +19,17 @@ function App() {
   const cart = useSelector((state) => state.cart);
   const notification = useSelector((state) => state.ui.notification);
 
-  // You need useEffect to listen to state changes
+  // Here it uses useEffect to listen to state changes
   useEffect(() => {
     if (isInitial) {
       isInitial = false;
       return;
     }
 
-    // !! call the thunk inside dispatch() to return a FUNCTION
-    // When a useDispatch dispatch function receives a function as the argument (instead of an action object), ...
-    // ... dispatch will call that function for you and pass in the store's (dispatch, getState) methods as arguments
+    // Call the thunk inside dispatch similar to an action creator
+    // But instead of returning an action obejct, it returns a FUNCTION
+    // When a useDispatch-returned function receives a function as the argument, (configureStore enables the react-thunk middleware for you) ...
+    // ... it will call that function and pass in the store's (dispatch, getState) methods as that function's arguments
     dispatch(sendCartData(cart));
   }, [cart, dispatch]);
 
