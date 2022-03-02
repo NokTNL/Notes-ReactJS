@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// Styled components: useful for creating your own style wrappers
+// Styled components: creating your own style wrappers
 
 /* Tagged template */
 // if a function precedes a template literal, it is called a "tagged template"

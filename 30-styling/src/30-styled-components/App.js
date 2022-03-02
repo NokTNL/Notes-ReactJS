@@ -4,7 +4,7 @@ import CourseGoalList from "./components/CourseGoals/CourseGoalList/CourseGoalLi
 import CourseInput from "./components/CourseGoals/CourseInput/CourseInput";
 import "./App.css";
 
-// see UI/Button.js for styled components
+// see UI/Button.js for styling wrappers, CourseGoals/CourseGoalItem.js for styling custom components
 
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
