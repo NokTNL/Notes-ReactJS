@@ -1,11 +1,13 @@
 import ReactDOM from "react-dom";
-// Wrap with the BrowserRouter here
 import { BrowserRouter } from "react-router-dom";
 
-import "./index.css";
-import App from "./App";
+import "./17-navlinks/index.css";
+
+// Choose your folder
+import App from "./17-navlinks/App";
 
 ReactDOM.render(
+  // Wrap the App with the BrowserRouter here to enable Router
   <BrowserRouter>
     <App />
   </BrowserRouter>,
