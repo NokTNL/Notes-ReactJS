@@ -30,8 +30,6 @@ const MainHeader = () => {
               Products
             </NavLink>
           </li>
-          {/* When rendered, <Redirect> force navigates to a new URL. Can be useful e.g. after an async operation */}
-          <Redirect to="/login" />
         </ul>
       </nav>
     </header>
