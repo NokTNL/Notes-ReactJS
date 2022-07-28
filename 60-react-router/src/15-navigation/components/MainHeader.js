@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink, Redirect } from "react-router-dom";
 
 import classes from "./MainHeader.module.css";
 
@@ -18,6 +18,20 @@ const MainHeader = () => {
           <li>
             <Link to="/products">Products</Link>
           </li>
+          <li>
+            {/* NavLink's are same as Link except you can specify an "active" class 
+            so that the link will have that class when the page shown corresponds to that Navlink ("active") */}
+            <NavLink activeClassName={classes.active} to="/welcome">
+              Welcome
+            </NavLink>
+          </li>
+          <li>
+            <NavLink activeClassName={classes.active} to="/products">
+              Products
+            </NavLink>
+          </li>
+          {/* When rendered, <Redirect> force navigates to a new URL. Can be useful e.g. after an async operation */}
+          <Redirect to="/login" />
         </ul>
       </nav>
     </header>
