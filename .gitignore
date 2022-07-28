@@ -1,1 +1,5 @@
 node_modules/
+.eslintcache
+
+# Udemy course materials
+react-complete-guide-code*

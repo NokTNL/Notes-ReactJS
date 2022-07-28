@@ -1,9 +1,10 @@
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import Welcome from "./pages/Welcome";
 import Products from "./pages/Products";
 import MainHeader from "./components/MainHeader";
 
+// Here for <Redirect>
 // Go to MainHeader.js for links
 
 function App() {
@@ -11,15 +12,18 @@ function App() {
     <div>
       <MainHeader />
       <main>
-        <Route path="/welcome">
-          <Welcome />
-        </Route>
-        <Route path="/products">
-          <Products />
-        </Route>
-        <Route path="/login">
-          <h1>Login!!!!</h1>
-        </Route>
+        <Switch>
+          <Route path="/welcome">
+            <Welcome />
+          </Route>
+          <Route path="/products">
+            <Products />
+          </Route>
+          {/* When rendered, <Redirect> force navigates to a new URL. Can be useful e.g. if the URL does not match anything and you want to show an error page */}
+          <Route path="/">
+            <Redirect to="/welcome" />
+          </Route>
+        </Switch>
       </main>
     </div>
   );
