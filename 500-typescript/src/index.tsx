@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
 // Select folder
-import './10-basics/index.css';
-import App from './10-basics/App';
+import './20-forms/index.css';
+import App from './20-forms/App';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
