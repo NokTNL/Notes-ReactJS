@@ -1,7 +1,6 @@
 import Counter from "./components/Counter";
 
-// See index.js for basic settings
-// See Counter.js for useSelector
+// See Counter.js
 
 function App() {
   return <Counter />;

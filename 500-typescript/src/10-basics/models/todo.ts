@@ -1,3 +1,5 @@
+// Define a CLASS for instantiating objects with the same shape!
+
 class Todo {
     id: string;
     text: string;
