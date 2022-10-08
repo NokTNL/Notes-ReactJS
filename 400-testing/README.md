@@ -12,8 +12,7 @@
 
 - You may want to warn for bad testing practices. There are ESLint plugins for RTL and jest-dom, respectively
 - Since CRA has `eslint` installed as a peer depenedency already, just install the two plugins:
-  - `npm install --save-dev eslint-plugin-jest-dom`
-  - `npm install --save-dev eslint-plugin-testing-library`
+  - `npm install --save-dev eslint-plugin-jest-dom eslint-plugin-testing-library`
 - Then add the following in `"eslintConfig"` property in `package.json` (or in a seperate `.eslintrc.json`, only one file will be used): (https://eslint.org/docs/latest/user-guide/configuring/configuration-files#configuration-file-formats)
 
 ```
