@@ -23,8 +23,8 @@
       "testing-library"
     ],
     "extends": [
-      "react-app",
-      "react-app/jest",
+      "react-app", <--
+      "react-app/jest", <-- these two already exists in CRA apps and are only useful in apps using react-scripts
       "plugin:testing-library/react",
       "plugin:jest-dom/recommended"
     ]
